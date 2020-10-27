@@ -123,4 +123,28 @@ public class Camera implements ICamera {
             return new Camera(this);
         }
     }
+
+    public String getSerialNumber() {
+        return serialNumber;
+    }
+
+    public MemoryCard getMemoryCard() {
+        return memoryCard;
+    }
+
+    public Chip[] getChips() {
+        return chips;
+    }
+
+    public IRLed[] getIrLeds() {
+        return irLeds;
+    }
+
+    public boolean isOn() {
+        return isOn;
+    }
+
+    public void setOn(boolean on) {
+        isOn = on;
+    }
 }
